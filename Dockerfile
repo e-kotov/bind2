@@ -21,7 +21,7 @@ USER ${NB_USER}
 RUN if [ -f install.R ]; then R --quiet -f install.R; fi
 
 
-ENV NB_USER=rstudio
+ENV NB_USER=jovyan
 
 # RUN /rocker_scripts/install_jupyter.sh
 
