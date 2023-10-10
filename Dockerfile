@@ -1,4 +1,4 @@
-FROM rocker/r-ver:3.5.3
+FROM rocker/rstudio:3.4.3
 
 ## Declares build arguments
 ARG NB_USER
