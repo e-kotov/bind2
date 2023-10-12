@@ -4,7 +4,7 @@ FROM egorktv/rimage:latest
 ARG NB_USER
 ARG NB_UID
 
-COPY --chown=${NB_USER} . ${HOME}
+# COPY --chown=${NB_USER} . ${HOME}
 
 ENV DEBIAN_FRONTEND=noninteractive
 USER root
