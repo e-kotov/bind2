@@ -1,10 +1,10 @@
-FROM egorktv/rimage:latest
+FROM rocker/binder:4.0.0
 
 ## Declares build arguments
 ARG NB_USER
 ARG NB_UID
 
-# COPY --chown=${NB_USER} . ${HOME}
+COPY --chown=${NB_USER} . ${HOME}
 
 ENV DEBIAN_FRONTEND=noninteractive
 USER root
