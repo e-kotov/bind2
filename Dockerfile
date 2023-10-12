@@ -1,4 +1,4 @@
-FROM egorktv/rimage:latest
+FROM rocker/binder:4.0.0
 
 ## Declares build arguments
 ARG NB_USER
