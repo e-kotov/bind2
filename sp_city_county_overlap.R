@@ -8,6 +8,8 @@ library(rgeos)
 library(raster)
 # package for loading spatial data from USCB
 library(tigris)
+# plotting with grammar of graphics
+library(ggplot2)
 
 # get county spatial data
 county_sp <- counties(state = "AZ", class = "sp", 2020)
@@ -28,3 +30,10 @@ city_county_df <- data.frame(
 
 # look at city county overlap
 # View(city_county_df[order(city_county_df$Area),])
+
+# plot areas by county
+ggplot(data = city_county_df) +
+  aes(y = Area, x = County) +
+  geom_violin() +
+  geom_jitter(size = 0.1)
+
