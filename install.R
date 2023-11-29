@@ -1,2 +1,1 @@
-package_list <- c("sp", "tigris", "geosphere", "rgeos", "raster")
-install.packages(package_list)
+remotes::install_github("e-kotov/gridsample", force = T)
